@@ -1,13 +1,14 @@
 package com.knoldus
 
+
 import scala.language.postfixOps
-import scala.collection.immutable.List
+import scala.collection.immutable._
 
 class QuickSort {
   def sort(b: List[Int]): List[Int] = {
     if (b.length <= 1)
     {
-      list
+      b
     }
     else {
       val pivot = b(b.length / 2)
@@ -16,3 +17,4 @@ class QuickSort {
     }
   }
 }
+
